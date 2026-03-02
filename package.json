@@ -1,0 +1,25 @@
+{
+  "name": "@zeing/pino-discord-transport",
+  "version": "1.0.0",
+  "description": "A transport for Pino that sends logs to a Discord channel via webhook.",
+  "keywords": [
+    "pino",
+    "discord",
+    "transport",
+    "webhook",
+    "logging"
+  ],
+  "main": "index.ts",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "discord.js": "^14.25.1",
+    "pino-abstract-transport": "^3.0.0"
+  }
+}
