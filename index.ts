@@ -46,7 +46,10 @@ async function discordTransport(options: {
       const fields = Object.entries(rest)
         .filter(([name]) => !options.excludeFields?.includes(name))
         .map(([name, value]) => ({
-          name: trim(name, MAX_FIELD_NAME),
+          name: trim(
+            name.charAt(0).toUpperCase() + name.slice(1),
+            MAX_FIELD_NAME,
+          ),
           value: trim(String(value), MAX_FIELD_VALUE),
         }));
 
