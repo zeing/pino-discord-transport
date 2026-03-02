@@ -21,5 +21,18 @@
   "dependencies": {
     "discord.js": "^14.25.1",
     "pino-abstract-transport": "^3.0.0"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeing/pino-discord-transport.git"
+  },
+  "author": "zeing",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zeing/pino-discord-transport/issues"
+  },
+  "homepage": "https://github.com/zeing/pino-discord-transport#readme"
 }
