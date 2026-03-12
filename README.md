@@ -2,6 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/@zeing/pino-discord-transport.svg)](https://www.npmjs.com/package/@zeing/pino-discord-transport)
 ![bun support](https://img.shields.io/badge/runtime-bun-black?logo=bun)
+![NPM Downloads](https://img.shields.io/npm/dm/@zeing/pino-discord-transport)
 
 > A Pino transport that sends logs directly to a Discord webhook.
 > Built with **Bun**.
