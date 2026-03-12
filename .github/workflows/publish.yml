@@ -16,6 +16,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          registry-url: 'https://registry.npmjs.org'
+
       - name: Set up Bun
         uses: oven-sh/setup-bun@v2
         with:
@@ -28,4 +34,4 @@ jobs:
         run: bun run build
 
       - name: Publish to npm
-        run: bun run publish
+        run: npm publish --provenance --access public
