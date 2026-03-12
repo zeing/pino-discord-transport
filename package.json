@@ -1,6 +1,6 @@
 {
   "name": "@zeing/pino-discord-transport",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A transport for Pino that sends logs to a Discord channel via webhook.",
   "keywords": [
     "pino",
@@ -34,7 +34,7 @@
   "scripts": {
     "build": "bun run build.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "publish": "bun run build && bun publish --access public"
+    "release": "bun run build && bun publish --access public"
   },
   "repository": {
     "type": "git",
