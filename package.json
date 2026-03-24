@@ -1,6 +1,6 @@
 {
   "name": "@zeing/pino-discord-transport",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "A transport for Pino that sends logs to a Discord channel via webhook.",
   "keywords": [
     "pino",

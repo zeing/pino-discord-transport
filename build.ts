@@ -13,6 +13,13 @@ for (const { format, outfile } of outputs) {
     target: "node",
     external: ["discord.js", "pino-abstract-transport"],
     naming: outfile.replace("dist/", ""),
+    minify: {
+      whitespace: true,
+      identifiers: true,
+      syntax: true,
+    },
+    drop: ["console"],
+    sourcemap: "inline",
   });
 
   if (!result.success) {
