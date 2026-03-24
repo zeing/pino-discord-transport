@@ -19,7 +19,6 @@ for (const { format, outfile } of outputs) {
       syntax: true,
     },
     drop: ["console"],
-    sourcemap: "inline",
   });
 
   if (!result.success) {

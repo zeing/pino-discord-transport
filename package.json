@@ -1,6 +1,6 @@
 {
   "name": "@zeing/pino-discord-transport",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "A transport for Pino that sends logs to a Discord channel via webhook.",
   "keywords": [
     "pino",
@@ -34,7 +34,8 @@
   "scripts": {
     "build": "bun run build.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "bun run build && bun publish --access public"
+    "release": "bun run build && bun publish --access public",
+    "tag": "git tag v$(node -p \"require('./package.json').version\") && git push origin v$(node -p \"require('./package.json').version\")"
   },
   "repository": {
     "type": "git",
