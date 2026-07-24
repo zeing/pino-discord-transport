@@ -55,11 +55,20 @@ async function discordTransport(options: {
 
       const fieldsExceedingLimit = fields.length > MAX_FIELDS;
 
+      const parsedTime =
+        typeof time === "number" || typeof time === "string"
+          ? new Date(time)
+          : null;
+
       const embed = new EmbedBuilder()
         .setColor(embedColors[level]!)
         .setTitle(String(msg))
         .addFields(fieldsExceedingLimit ? fields.slice(0, MAX_FIELDS) : fields)
-        .setTimestamp(typeof time === "number" ? time : null);
+        .setTimestamp(
+          parsedTime && !Number.isNaN(parsedTime.getTime())
+            ? parsedTime
+            : null,
+        );
 
       if (fieldsExceedingLimit) {
         embed.setFooter({
